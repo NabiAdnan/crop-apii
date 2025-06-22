@@ -14,5 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5001
 
 # Start the Flask serverdocker ps
-# CMD ["python", "app.py"]
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5001", "app:app"]
+CMD ["python", "app.py"]
